@@ -45,6 +45,13 @@ pipeline {
                 }
             }
         }
+        stage('Check Docker') {
+            steps {
+                bat 'where docker'
+                bat 'docker --version'
+                bat 'docker compose version'
+            }
+}
 
         stage('Build Docker Images') {
             steps {
