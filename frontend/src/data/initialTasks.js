@@ -1,0 +1,42 @@
+export const initialTasks = [
+  {
+    id: 1,
+    title: "Learn Docker Fundamentals",
+    description: "Understand images, containers and Dockerfiles.",
+    status: "In Progress",
+    priority: "High",
+    dueDate: "2026-11-15",
+  },
+  {
+    id: 2,
+    title: "Build React Dashboard",
+    description: "Create the frontend for the DevOps project.",
+    status: "Completed",
+    priority: "High",
+    dueDate: "2026-11-13",
+  },
+  {
+    id: 3,
+    title: "Learn Jenkins Pipeline",
+    description: "Understand CI/CD automation using Jenkins.",
+    status: "Pending",
+    priority: "Medium",
+    dueDate: "2026-11-20",
+  },
+  {
+    id: 4,
+    title: "Practice Kubernetes Pods",
+    description: "Create and manage Kubernetes Pods.",
+    status: "Pending",
+    priority: "High",
+    dueDate: "2026-11-22",
+  },
+  {
+    id: 5,
+    title: "Configure GitHub Actions",
+    description: "Create an automated CI workflow.",
+    status: "In Progress",
+    priority: "Medium",
+    dueDate: "2026-11-18",
+  },
+];
