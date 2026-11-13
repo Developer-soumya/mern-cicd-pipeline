@@ -45,13 +45,14 @@ pipeline {
                 }
             }
         }
+
         stage('Check Docker') {
             steps {
                 bat 'where docker'
                 bat 'docker --version'
-                bat 'docker compose version'
+                bat 'docker info --format "{{.ServerVersion}}"'
             }
-}
+        }
 
         stage('Build Docker Images') {
             steps {
@@ -59,7 +60,6 @@ pipeline {
                 bat 'docker build -t devops-task-manager-frontend:latest ./frontend'
             }
         }
-
     }
 
     post {
